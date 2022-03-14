@@ -1,0 +1,485 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Barlow";
+    font-size: 1.125rem;
+    position: relative
+}
+
+:root {
+    --cor-vermelho-suave: hsl(7, 99%, 70%);
+    --cor-amarelo: hsl(51, 100%, 49%);
+    --cor-ciano-escuro-dessaturado-texto-design-grafico: hsl(167, 40%, 24%);
+    --cor-azul-escuro-texto-da-fotografia: hsl(198, 62%, 26%);
+    --cor-ciano-escuro-moderado-rodape: hsl(168, 34%, 41%);
+    --cor-azul-dessaturado-muito-escuro: hsl(212, 27%, 19%);
+    --cor-azul-acinzentado-muito-escuro: hsl(213, 9%, 39%);
+    --cor-azul-acinzentado-escuro: hsl(232, 10%, 55%);
+    --cor-azul-acinzentado: hsl(210, 4%, 67%);
+    --cor-hover: #6eceff;
+    --cor-branco: hsl(0, 0%, 100%);
+    --cor-btn-yellow: rgba(250, 212, 0, .25);
+    --cor-btn-pink: hsla(7, 99%, 70%, .25);
+}
+
+nav,
+ul,
+a,
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+h1,
+h2 {
+    line-height: 2.9rem;
+    font-family: "Fraunces";
+    opacity: .8;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.9rem 1.6rem;
+    position: absolute;
+    width: 100%;
+}
+
+.header-logo {
+    cursor: pointer;
+    width: 9.4rem;
+}
+
+.header-nav {
+    align-items: center;
+    background: var(--cor-branco);
+    display: flex;
+    flex-direction: column;
+    left: 1.6rem;
+    padding: 2.5rem 0;
+    position: absolute;
+    right: 1.6rem;
+    text-align: center;
+    top: 8rem;
+    transform: translateY(-31.25rem);
+    transition: .5s;
+    z-index: 2;
+}
+
+.header-nav.display {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.header-nav:before {
+    border-bottom: 2.5rem solid var(--cor-branco);
+    ;
+    border-left: 2.5rem solid transparent;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -2.5rem;
+}
+
+.header-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.header-nav ul a {
+    color: var(--cor-azul-escuro-texto-da-fotografia);
+    font-size: 1.5rem;
+}
+
+.header-nav ul li:last-child {
+    background-color: var(--cor-amarelo);
+    border-radius: 3.2rem;
+    cursor: pointer;
+    padding: 1.25rem 1.9rem;
+}
+
+.header-nav ul li:last-child:hover {
+    background-color: var(--cor-hover);
+}
+
+.header-nav ul li:last-child:hover a {
+    color: var(--cor-branco);
+    ;
+}
+
+.header-nav ul li:last-child a {
+    color: var(--cor-ciano-escuro-dessaturado-texto-design-grafico);
+    text-transform: uppercase;
+}
+
+.menu-hidden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transform: scale(.8);
+    transition: all .5s ease-in-out;
+    width: 2rem;
+    height: 2rem;
+}
+
+.main {
+    background-image: url(./images/mobile/image-header.jpg);
+    background-position: 50%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+}
+
+.main h1 {
+    color: var(--cor-branco);
+    font-family: "Fraunces";
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: .46875rem;
+    margin: 0 .625rem 3.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    word-break: break-word;
+}
+
+.arrow {
+    height: 9.4rem;
+    width: auto;
+}
+
+.arrow:hover {
+    transform: translateY(-10%);
+}
+
+.section-brand {
+    align-items: center;
+    display: grid;
+    justify-items: center;
+}
+
+.section-brand article {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+    line-height: 1.9rem;
+    max-width: 28.2rem;
+    padding: 3.1rem 1.30rem;
+    text-align: center;
+    width: 100%;
+}
+
+.section-brand article h1 {
+    line-height: 2.9rem;
+    font-size: 2.2rem;
+    font-family: "Fraunces";
+    opacity: .8;
+}
+
+.section-brand>article {
+    max-width: 31.25rem;
+}
+
+.section-brand>article h2 {
+    font-size: 2.2rem;
+}
+
+.text-band {
+    color: var(--cor-azul-escuro-texto-da-fotografia);
+    opacity: .9;
+}
+
+.section-brand>article button {
+    font-family: "Fraunces";
+    position: relative;
+    text-transform: uppercase;
+    opacity: .9;
+    font-weight: 800;
+}
+
+.section-brand>article button:after {
+    border-radius: .4380rem;
+    bottom: -.21875rem;
+    content: "";
+    height: .625rem;
+    left: -.46880rem;
+    position: absolute;
+    right: -.46875rem;
+    z-index: -1;
+}
+
+.section-brand>div {
+    position: relative;
+}
+
+.section-brand>div:first-of-type {
+    color: var(--cor-ciano-escuro-dessaturado-texto-design-grafico);
+    width: 100%;
+}
+
+.section-brand>div:nth-of-type(2) {
+    width: 100%;
+}
+
+.section-brand>div>article {
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.btn-yellow:after {
+    background-color: var(--cor-btn-yellow);
+}
+
+.btn-yellow:hover:after {
+    background-color: var(--cor-amarelo);
+}
+
+.btn-pink:after {
+    background-color: var(--cor-btn-pink);
+}
+
+.btn-pink:hover:after {
+    background-color: var(--cor-vermelho-suave);
+}
+
+.section-testimonials {
+    padding: 3rem 1.875rem;
+}
+
+.section-testimonials>h3 {
+    color: var(--cor-azul-acinzentado-escuro);
+    font-size: 1.2rem;
+    letter-spacing: .3130rem;
+    margin-bottom: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content-testimonials {
+    display: grid;
+    gap: 4rem;
+}
+
+.card-testimonials {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-testimonials img,
+.card-testimonials p {
+    margin-bottom: 2.5rem;
+}
+
+.card-testimonials p {
+    font-size: 1rem;
+    color: var(--cor-azul-escuro-texto-da-fotografia);
+    line-height: 2rem;
+    text-align: center;
+    opacity: .9;
+}
+
+.card-testimonials h3 {
+    color: var(--cor-ciano-escuro-dessaturado-texto-design-grafico);
+    font-family: "Fraunces";
+    margin-bottom: .9380rem;
+}
+
+.card-testimonials h4 {
+    color: var(--cor-azul-acinzentado-escuro);
+    ;
+    font-size: 1rem;
+}
+
+.img-card {
+    border-radius: 50%;
+    height: 4.4rem;
+    width: 4.4rem;
+}
+
+.content-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+footer {
+    align-items: center;
+    background-color: var(--cor-ciano-escuro-moderado-rodape);
+    ;
+    display: flex;
+    flex-direction: column;
+    padding: 3.75rem 1.9rem 1.9rem;
+}
+
+footer nav {
+    max-width: 23.5rem;
+    width: 100%;
+}
+
+footer nav ul {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+}
+
+footer nav ul li a {
+    color: var(--cor-ciano-escuro-dessaturado-texto-design-grafico);
+    ;
+}
+
+footer nav ul li a:hover {
+    color: var(--cor-branco);
+}
+
+.footer-logo {
+    cursor: pointer;
+    filter: invert(28%) sepia(5%) saturate(4119%) hue-rotate(116deg) brightness(30%) contrast(85%);
+    margin-bottom: 2.5rem;
+    width: 11rem;
+}
+
+.content-icons {
+    display: flex;
+    gap: 1.9rem;
+    margin-top: 5rem;
+}
+
+.icons-img:hover {
+    filter: brightness(0) invert(1);
+}
+
+@media (min-width:800px) {
+    .main {
+        background-image: url(./images/desktop/image-header.jpg);
+    }
+    .menu-hidden {
+        display: none;
+    }
+    .header-nav {
+        background: transparent;
+        opacity: 1;
+        padding: 0;
+        position: static;
+        transform: translate(0);
+        visibility: visible;
+        z-index: 2;
+    }
+    .header-nav:before {
+        border: 0;
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .header-nav ul {
+        align-items: center;
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+    .header-nav ul a {
+        color: var(--cor-branco);
+        font-size: 1.5rem;
+    }
+    .header-nav ul li:last-child {
+        background-color: var(--cor-branco);
+        border-radius: 3.2rem;
+        font-family: "Fraunces";
+        padding: 1.30rem 1.9rem
+    }
+    .header-nav ul li:last-child a {
+        color: var(--cor-ciano-escuro-dessaturado-texto-design-grafico);
+        text-transform: uppercase;
+    }
+    .content-gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .section-brand {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section-brand article {
+        padding: 0 1.25rem 2.5rem;
+    }
+    .section-brand>article {
+        align-items: flex-start;
+        text-align: left;
+    }
+    .section-brand>article:first-of-type {
+        grid-area: 1;
+    }
+    .section-brand>article:nth-of-type(2) {
+        grid-area: 2;
+    }
+    .section-brand>div:first-of-type {
+        grid-area: 3;
+    }
+    .section-brand>div:nth-of-type(2) {
+        grid-area: 3;
+    }
+    .img-transform {
+        grid-area: 0;
+        background-image: url(./images/desktop/image-gallery-orange.jpg);
+    }
+    .img-stand {
+        grid-area: 2;
+        background-image: url(./images/desktop/image-stand-out.jpg);
+    }
+    .card-testimonials p {
+        width: 23rem;
+        font-size: 1.2rem;
+    }
+    .cone {
+        background-image: url(./images/desktop/image-gallery-cone.jpg);
+    }
+    .milkbottles {
+        background-image: url(./images/desktop/image-gallery-milkbottles.jpg);
+    }
+    .orange {
+        background-image: url(./images/desktop/image-gallery-orange.jpg);
+    }
+    .sugar {
+        background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
+    }
+}
+
+@media (min-width:1000px) {
+    .section-testimonials {
+        padding: 7.5rem 1.9rem
+    }
+    .content-testimonials {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
