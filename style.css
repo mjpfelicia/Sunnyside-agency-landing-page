@@ -165,7 +165,6 @@ h2 {
     margin: 0 .625rem 3.75rem;
     text-align: center;
     text-transform: uppercase;
-    word-break: break-word;
 }
 
 .arrow {
@@ -195,7 +194,7 @@ h2 {
     width: 100%;
 }
 
-.section-brand article h1 {
+.titulo-brand {
     line-height: 2.9rem;
     font-size: 2.2rem;
     font-family: "Fraunces";
@@ -381,6 +380,7 @@ footer nav ul li a:hover {
 @media (min-width:800px) {
     .main {
         background-image: url(./images/desktop/image-header.jpg);
+        height: 89vh;
     }
     .menu-hidden {
         display: none;
@@ -427,6 +427,7 @@ footer nav ul li a:hover {
     }
     .section-brand {
         grid-template-columns: repeat(2, 1fr);
+        flex: 1;
     }
     .section-brand article {
         padding: 0 1.25rem 2.5rem;
@@ -470,6 +471,16 @@ footer nav ul li a:hover {
     }
     .sugar {
         background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
+    }
+    .img-graphic {
+        background-image: url(./images/desktop/image-graphic-design.jpg);
+        background-size: cover;
+        height: 720px;
+    }
+    .photography {
+        background-image: url(./images/desktop/image-photography.jpg);
+        background-size: cover;
+        height: 720px;
     }
 }
 
