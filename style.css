@@ -461,25 +461,30 @@ footer div ul li a:hover {
     }
     .cone {
         background-image: url(./images/desktop/image-gallery-cone.jpg);
+        width: 100%;
+        height: 25rem;
     }
     .milkbottles {
         background-image: url(./images/desktop/image-gallery-milkbottles.jpg);
+        height: 25rem;
     }
     .orange {
         background-image: url(./images/desktop/image-gallery-orange.jpg);
+        height: 25rem;
     }
     .sugar {
         background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
+        height: 25rem;
     }
     .img-graphic {
         background-image: url(./images/desktop/image-graphic-design.jpg);
         background-size: cover;
-        height: 720px;
+        height: 43.75rem;
     }
     .photography {
         background-image: url(./images/desktop/image-photography.jpg);
         background-size: cover;
-        height: 720px;
+        height: 43.75rem;
     }
 }
 
