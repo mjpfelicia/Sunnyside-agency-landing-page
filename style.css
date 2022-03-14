@@ -334,29 +334,27 @@ h2 {
 footer {
     align-items: center;
     background-color: var(--cor-ciano-escuro-moderado-rodape);
-    ;
     display: flex;
     flex-direction: column;
     padding: 3.75rem 1.9rem 1.9rem;
 }
 
-footer nav {
+footer div {
     max-width: 23.5rem;
     width: 100%;
 }
 
-footer nav ul {
+footer div ul {
     display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
 }
 
-footer nav ul li a {
+footer div ul li a {
     color: var(--cor-ciano-escuro-dessaturado-texto-design-grafico);
-    ;
 }
 
-footer nav ul li a:hover {
+footer div ul li a:hover {
     color: var(--cor-branco);
 }
 
@@ -369,6 +367,7 @@ footer nav ul li a:hover {
 
 .content-icons {
     display: flex;
+    justify-content: center;
     gap: 1.9rem;
     margin-top: 5rem;
 }
