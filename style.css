@@ -276,8 +276,7 @@ h2 {
 
 .section-testimonials>h3 {
     color: var(--cor-azul-acinzentado-escuro);
-    font-size: 1.2rem;
-    letter-spacing: .3130rem;
+    letter-spacing: 5px;
     margin-bottom: 3.5rem;
     text-align: center;
     text-transform: uppercase;
@@ -292,6 +291,7 @@ h2 {
     align-items: center;
     display: flex;
     flex-direction: column;
+    gap: 3.1rem;
 }
 
 .card-testimonials img,
@@ -310,7 +310,7 @@ h2 {
 .card-testimonials h3 {
     color: var(--cor-ciano-escuro-dessaturado-texto-design-grafico);
     font-family: "Fraunces";
-    margin-bottom: .9380rem;
+    margin-bottom: -2rem;
 }
 
 .card-testimonials h4 {
@@ -336,7 +336,7 @@ footer {
     background-color: var(--cor-ciano-escuro-moderado-rodape);
     display: flex;
     flex-direction: column;
-    padding: 3.75rem 1.9rem 1.9rem;
+    padding: 4rem 1.2rem;
     min-height: 30vh;
 }
 
@@ -479,13 +479,25 @@ footer div ul li a:hover {
     }
     .img-graphic {
         background-image: url(./images/desktop/image-graphic-design.jpg);
+        position: relative;
+        text-align: center;
+        background-repeat: no-repeat;
         background-size: cover;
-        height: 43.75rem;
+        background-position: center;
+        height: 33.5rem;
+        max-height: 20%;
+        width: 100%;
     }
     .photography {
         background-image: url(./images/desktop/image-photography.jpg);
+        position: relative;
+        text-align: center;
+        background-repeat: no-repeat;
         background-size: cover;
-        height: 43.75rem;
+        background-position: center;
+        height: 33.5rem;
+        max-height: 20%;
+        width: 100%;
     }
 }
 
