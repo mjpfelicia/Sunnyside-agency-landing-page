@@ -484,8 +484,6 @@ footer div ul li a:hover {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height: 33.5rem;
-        max-height: 20%;
         width: 100%;
     }
     .photography {
@@ -495,8 +493,6 @@ footer div ul li a:hover {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height: 36rem;
-        max-height: 20%;
         width: 100%;
     }
 }
