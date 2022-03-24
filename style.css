@@ -463,19 +463,19 @@ footer div ul li a:hover {
     .cone {
         background-image: url(./images/desktop/image-gallery-cone.jpg);
         width: 100%;
-        height: 25rem;
+        height: 30rem;
     }
     .milkbottles {
         background-image: url(./images/desktop/image-gallery-milkbottles.jpg);
-        height: 25rem;
+        height: 30rem;
     }
     .orange {
         background-image: url(./images/desktop/image-gallery-orange.jpg);
-        height: 25rem;
+        height: 30rem;
     }
     .sugar {
         background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
-        height: 25rem;
+        height: 30rem;
     }
     .img-graphic {
         background-image: url(./images/desktop/image-graphic-design.jpg);
